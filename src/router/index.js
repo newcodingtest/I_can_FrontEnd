@@ -2,6 +2,8 @@ import { createRouter, createWebHistory } from 'vue-router';
 import ItemDetail from '@/components/ItemDetail.vue'; // 상세 페이지 컴포넌트
 import ItemTable from '@/components/ItemList.vue'; // 상세 페이지 컴포넌트
 import ItemTableV1 from '@/components/ItemListV1.vue'; // 상세 페이지 컴포넌트
+import STUDY from '@/components/studyTest.vue';
+
 
 const routes = [
     {
@@ -19,6 +21,11 @@ const routes = [
         name: 'ItemDetail',
         component: ItemDetail,
         props: route => ({ item: route.params.itemData}) 
+      },
+      {
+        path: '/study', //
+        name: 'ItemStudy',
+        component: STUDY
       },
 
   ];
