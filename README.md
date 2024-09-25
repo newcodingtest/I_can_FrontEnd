@@ -2,6 +2,8 @@
 
 ## Project setup
 ```
+npm install @mdi/font bootstrap bootstrap-vue-next vuetify
+
 npm install
 ```
 
